@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "414948364425",
-    "firebase_url": "https://codelet-25829.firebaseio.com",
-    "project_id": "codelet-25829",
-    "storage_bucket": "codelet-25829.appspot.com"
+    "project_number": "647533750295",
+    "firebase_url": "https://codelet-ae873.firebaseio.com",
+    "project_id": "codelet-ae873",
+    "storage_bucket": "codelet-ae873.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:414948364425:android:8d8a736817589e38",
+        "mobilesdk_app_id": "1:647533750295:android:64f8c08c00818265",
         "android_client_info": {
           "package_name": "com.weebly.codelet.codelet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "414948364425-6ti1s5jas0mc3b3spc2gsqno9ca40ous.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.weebly.codelet.codelet",
-            "certificate_hash": "66B605D50EE2D780E550DDC42937185E32E0207C"
-          }
-        },
-        {
-          "client_id": "414948364425-rtklcm4l6ml521v784efgsd3q2b0vm63.apps.googleusercontent.com",
+          "client_id": "647533750295-af7ifto3920dmrao8sres0ah92q9rhrp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAbqiJqj9cVSTwKWrga18ihyZBWSFYGWOM"
+          "current_key": "AIzaSyBEoSuEkmiDgzGW2bhvQoW-XPe85IPPS8s"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "414948364425-rtklcm4l6ml521v784efgsd3q2b0vm63.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
