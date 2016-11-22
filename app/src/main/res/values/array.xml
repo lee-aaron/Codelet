@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array">
+        <item>Arrays</item>
+        <item>Strings</item>
+        <item>Loops</item>
+        <item>Methods</item>
+        <item>Syntax</item>
+    </array>
+</resources>
