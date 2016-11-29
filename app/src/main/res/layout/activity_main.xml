@@ -36,4 +36,12 @@
             android:background="#ffeeeeee"/>
 
     </android.support.v4.widget.DrawerLayout>
+
+    <fragment
+        android:name="com.weebly.codelet.codelet.ArraysFragment"
+        android:id="@+id/fragment_arrays"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
 </RelativeLayout>
