@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -55,21 +54,22 @@ public class MainActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                Fragment fragment;
+                Fragment fragment = null;
                 switch (position) {
                     case 0:
                         fragment = new ArraysFragment();
                         fragmentTransaction.replace(android.R.id.content, fragment);
+                        fragmentTransaction.addToBackStack(null);
                         break;
 
                     default:
+                        fragmentTransaction.remove(fragment);
                         break;
                 }
                 fragmentTransaction.commit();
-    
+
             }
         });
     }
