@@ -9,7 +9,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello World</string>
+    <string name="nav_header">Java Topics</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="types">Types</string>
+
+    <string name="info">Welcome to Codelet! Click on the menu in the top left to learn about Java!</string>
 
 </resources>

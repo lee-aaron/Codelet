@@ -76,10 +76,11 @@ public class MainActivity extends AppCompatActivity {
         Class fragmentClass;
         switch(menuItem.getItemId()) {
             case R.id.nav_first_fragment:
-                fragmentClass = ArraysFragment.class;
+                fragmentClass = GettingStartedFragment.class;
                 break;
             case R.id.nav_second_fragment:
                 fragmentClass = HelloWorldFragment.class;
+                break;
             default:
                 fragmentClass = ArraysFragment.class;
         }
