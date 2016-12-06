@@ -1,5 +1,6 @@
 package com.weebly.codelet.codelet;
 
+import android.content.pm.ActivityInfo;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -18,7 +19,6 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
     private AdView mAdView;
-    private String mActivityTitle;
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        mActivityTitle = getTitle().toString();
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Find our drawer view
@@ -49,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         // Tie DrawerLayout events to the ActionBarToggle
         mDrawer.addDrawerListener(drawerToggle);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
     }
@@ -78,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_first_fragment:
                 fragmentClass = ArraysFragment.class;
                 break;
+            case R.id.nav_second_fragment:
+                fragmentClass = HelloWorldFragment.class;
             default:
                 fragmentClass = ArraysFragment.class;
         }

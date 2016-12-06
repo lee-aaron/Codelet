@@ -7,9 +7,15 @@
     android:layout_height="match_parent">
 
     <FrameLayout
-        android:id="@+id/arrayFragment"
+        android:id="@+id/helloWorldFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textColor="@android:color/white" />
 
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
