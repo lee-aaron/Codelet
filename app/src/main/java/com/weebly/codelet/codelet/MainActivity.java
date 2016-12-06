@@ -1,6 +1,7 @@
 package com.weebly.codelet.codelet;
 
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -74,25 +75,31 @@ public class MainActivity extends AppCompatActivity {
         // Create a new fragment and specify the fragment to show based on nav item clicked
         Fragment fragment = null;
         Class fragmentClass;
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
         switch(menuItem.getItemId()) {
             case R.id.nav_first_fragment:
                 fragmentClass = GettingStartedFragment.class;
                 break;
             case R.id.nav_second_fragment:
                 fragmentClass = HelloWorldFragment.class;
+
+                break;
+            case R.id.nav_third_fragment:
+                fragmentClass = ArraysFragment.class;
                 break;
             default:
-                fragmentClass = ArraysFragment.class;
+                fragmentClass = MainScreen.class;
+                break;
         }
-
         try {
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+
         // Insert the fragment by replacing any existing fragment
-        FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
 
         // Highlight the selected item has been done by NavigationView

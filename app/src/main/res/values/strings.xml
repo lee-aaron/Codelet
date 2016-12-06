@@ -16,4 +16,7 @@
 
     <string name="info">Welcome to Codelet! Click on the menu in the top left to learn about Java!</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
