@@ -83,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_second_fragment:
                 fragmentClass = HelloWorldFragment.class;
-
                 break;
             case R.id.nav_third_fragment:
                 fragmentClass = ArraysFragment.class;
@@ -97,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
         // Insert the fragment by replacing any existing fragment
         fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
