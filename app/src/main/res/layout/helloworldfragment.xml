@@ -5,12 +5,12 @@
     android:id="@+id/helloWorldFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5">
+    android:background="#FFFFFF">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
-        android:textColor="@android:color/white" />
+        android:textColor="#808080" />
 
 </FrameLayout>

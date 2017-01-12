@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Insert the fragment by replacing any existing fragment
-        fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+        fragmentManager.beginTransaction().replace(R.id.flFragments, fragment).commit();
 
         // Highlight the selected item has been done by NavigationView
         menuItem.setChecked(true);
