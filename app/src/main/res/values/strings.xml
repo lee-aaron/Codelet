@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">Codelet</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
     <string name="action_settings">Settings</string>
@@ -19,7 +19,7 @@
     </string>
 
     <string name="getting_started_info">
-        Java is just one of the many coding languages used in the world. A variation of it is used to code even this app!
+        Java is just one of the many coding languages used in the world. A variation of it is used to code even this app! This app is used to help teach Java to inexperienced users and to help understand the fundamentals of the coding language. Your effort in reading and comprehending will lead to success.
     </string>
 
     <string name="hello_world_info">System.out.println("Hello World!");</string>
