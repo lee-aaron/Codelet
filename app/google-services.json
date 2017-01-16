@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "647533750295",
-    "firebase_url": "https://codelet-ae873.firebaseio.com",
-    "project_id": "codelet-ae873",
-    "storage_bucket": "codelet-ae873.appspot.com"
+    "project_number": "359073244742",
+    "firebase_url": "https://codelet-50f72.firebaseio.com",
+    "project_id": "codelet-50f72",
+    "storage_bucket": "codelet-50f72.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:647533750295:android:64f8c08c00818265",
+        "mobilesdk_app_id": "1:359073244742:android:8d8a736817589e38",
         "android_client_info": {
           "package_name": "com.weebly.codelet.codelet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "647533750295-af7ifto3920dmrao8sres0ah92q9rhrp.apps.googleusercontent.com",
+          "client_id": "359073244742-ecnphhmc62u41vtgog6sjtal4g5krsq9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBEoSuEkmiDgzGW2bhvQoW-XPe85IPPS8s"
+          "current_key": "AIzaSyCUUdiV88hZDt3cDFBgTywlY_iP2DUpPyQ"
         }
       ],
       "services": {

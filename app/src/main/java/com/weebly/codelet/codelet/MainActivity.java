@@ -1,7 +1,6 @@
 package com.weebly.codelet.codelet;
 
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -89,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_second_fragment:
                 fragmentClass = HelloWorldFragment.class;
-
                 break;
             case R.id.nav_third_fragment:
                 fragmentClass = ArraysFragment.class;
