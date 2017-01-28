@@ -26,6 +26,17 @@
                 android:layout_margin="@dimen/small_margin"
                 android:gravity="center_vertical|center_horizontal"/>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/javacup"/>
+
+            <com.weebly.codelet.codelet.ChangeFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/getting_start_two"
+                android:layout_margin="@dimen/small_margin"
+                android:gravity="center_vertical|center_horizontal"/>
         </LinearLayout>
 
     </ScrollView>

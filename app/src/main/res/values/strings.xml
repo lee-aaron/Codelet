@@ -19,10 +19,21 @@
     </string>
 
     <string name="getting_started_info">
-        Java is just one of the many coding languages used in the world. A variation of it is used to code even this app! This app is used to help teach Java to inexperienced users and to help understand the fundamentals of the coding language. Your effort in reading and comprehending will lead to success.
+        Java is just one of the many programming languages used in the massive world of code. This app is used to help teach Java to inexperienced users and to help understand the fundamentals of the coding language. Your efforts in reading and comprehending will lead to success. Throughout Codelet, you will find various lessons, examples, and tips on how to improve your Java programming ability.
+        \n
+    </string>
+    <string name="getting_start_two">
+        \n
+        In order to compile Java programs, there are a multitude of tools that you can use. However, one of the more popular Java IDE’s (Integrated development environment), and also one that we personally recommend, is called “Eclipse.”
+        \n\nEclipse Download: https://eclipse.org/downloads/
+       \n\nIf you want to follow these lessons, you should download “Eclipse,” but any other compiler should do the job.
+       \nWe hope that you find great use in our lessons. Good Luck!
     </string>
 
-    <string name="hello_world_info">System.out.println("Hello World!");</string>
+    <string name="hello_world_info">Welcome to the first lesson! We hope that you are as excited as we are. Now let’s create our first project. Once you open up Eclipse or any other compiler you downloaded, you will see a workspace folder, which is simply used for storing your programs.
+       \n\nOnce you have opened up Eclipse, go to File -> New -> Java Project</string>
+
+    <string name="hello_world_info2">Then name your Project: “First” and click Finish</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
