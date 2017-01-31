@@ -35,6 +35,12 @@
 
     <string name="hello_world_info2">Then name your Project: “First” and click Finish</string>
 
+    <string name="hello_world_info3">After you create your project, right click, go to New and create a Class called “HelloWorld”. Then click Finish.</string>
+
+    <string name="hello_world_info4">After you create your class, you should end up with an empty file with “public class HelloWorld”. \nInside the brackets, input the lines as shown below and compile your program with the green play button on the toolbar above. \nCongratulations, you have completed your first program!</string>
+
+    <string name="hello_world_info5">Now… Let’s go into some detail about what is going on in this program. \nThe “public class HelloWorld portion of this code basically acts as an outline for the program. This should come with the creation of a new Java class and should be left alone. \nThe “public static void main (String []args)” portion is necessary for the program to run and pretty much declares that your program is running from that class. Inside the main class, we used “System.out.println” in order to print out the words “Hello World”. These descriptions are generalized as of now but we will go into more details on syntax in the next lesson.</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
