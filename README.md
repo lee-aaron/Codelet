@@ -1,1 +1,2 @@
-# Codelet (Currently Testing w/ User Interface)
+# Codelet
+Currently writing lessons
