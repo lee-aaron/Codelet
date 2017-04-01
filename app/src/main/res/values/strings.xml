@@ -21,8 +21,7 @@
     <string name="getting_started_info">
         Java is just one of the many programming languages used in the massive world of code. This app is used to help teach Java to inexperienced users and to help understand the fundamentals of the coding language. Your efforts in reading and comprehending will lead to success. Throughout Codelet, you will find various lessons, examples, and tips on how to improve your Java programming ability.
         \n
-    </string>
-    <string name="getting_start_two">
+
         \n
         In order to compile Java programs, there are a multitude of tools that you can use. However, one of the more popular Java IDE’s (Integrated development environment), and also one that we personally recommend, is called “Eclipse.”
         \n\nEclipse Download: https://eclipse.org/downloads/
