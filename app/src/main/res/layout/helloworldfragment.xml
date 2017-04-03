@@ -1,87 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:id="@+id/helloWorldFragment"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:layout_height="match_parent">
 
-    <ScrollView
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/tools"
+        android:id="@+id/helloWorldFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_above="@+id/adView">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:weightSum="1">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <com.weebly.codelet.codelet.ChangeFont
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hello_world_info"
-                android:layout_margin="@dimen/small_margin"
-                android:gravity="center_vertical|center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1">
 
-            <ImageView
-                android:layout_width="262dp"
-                android:layout_height="302dp"
-                android:id="@+id/helloWorldFragmentImageOne"
-                />
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/hello_world_info" />
 
-            <com.weebly.codelet.codelet.ChangeFont
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hello_world_info2"
-                android:layout_margin="@dimen/small_margin"
-                android:gravity="center_vertical|center_horizontal"
-                android:layout_weight="2.86" />
+                <ImageView
+                    android:id="@+id/helloWorldFragmentImageOne"
+                    android:layout_width="262dp"
+                    android:layout_height="302dp"
+                    android:layout_gravity="center_horizontal"/>
 
-            <ImageView
-                android:layout_width="262dp"
-                android:layout_height="300dp"
-                android:id="@+id/helloWorldFragmentImageTwo"
-                />
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:layout_weight="2.86"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/hello_world_info2" />
 
-            <com.weebly.codelet.codelet.ChangeFont
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hello_world_info3"
-                android:layout_margin="@dimen/small_margin"
-                android:gravity="center_vertical|center_horizontal"/>
+                <ImageView
+                    android:id="@+id/helloWorldFragmentImageTwo"
+                    android:layout_width="262dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal" />
 
-            <ImageView
-                android:layout_width="262dp"
-                android:layout_height="300dp"
-                android:id="@+id/helloWorldFragmentImageThree"
-                />
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/hello_world_info3" />
 
-            <com.weebly.codelet.codelet.ChangeFont
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hello_world_info4"
-                android:layout_margin="@dimen/small_margin"
-                android:gravity="center_vertical|center_horizontal"/>
+                <ImageView
+                    android:id="@+id/helloWorldFragmentImageThree"
+                    android:layout_width="262dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal" />
 
-            <ImageView
-                android:layout_width="262dp"
-                android:layout_height="113dp"
-                android:id="@+id/helloWorldFragmentImageFour"/>
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/hello_world_info4" />
 
-            <com.weebly.codelet.codelet.ChangeFont
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hello_world_info5"
-                android:layout_margin="@dimen/small_margin"
-                android:gravity="center_vertical|center_horizontal"/>
+                <ImageView
+                    android:id="@+id/helloWorldFragmentImageFour"
+                    android:layout_width="262dp"
+                    android:layout_height="113dp"
+                    android:layout_gravity="center_horizontal" />
 
-        </LinearLayout>
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/hello_world_info5" />
 
-    </ScrollView>
+            </LinearLayout>
 
+        </ScrollView>
 
-</FrameLayout>
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

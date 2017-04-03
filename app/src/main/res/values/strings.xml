@@ -12,7 +12,7 @@
     <string name="hello_world">Hello World</string>
     <string name="nav_header">Java Topics</string>
     <string name="getting_started">Getting Started</string>
-    <string name="types">Types</string>
+    <string name="arrays">Arrays</string>
 
     <string name="info">
         Welcome to Codelet! Click on the menu in the top left to learn about Java!
@@ -21,7 +21,9 @@
     <string name="getting_started_info">
         Java is just one of the many programming languages used in the massive world of code. This app is used to help teach Java to inexperienced users and to help understand the fundamentals of the coding language. Your efforts in reading and comprehending will lead to success. Throughout Codelet, you will find various lessons, examples, and tips on how to improve your Java programming ability.
         \n
+    </string>
 
+    <string name="getting_started_info2">
         \n
         In order to compile Java programs, there are a multitude of tools that you can use. However, one of the more popular Java IDE’s (Integrated development environment), and also one that we personally recommend, is called “Eclipse.”
         \n\nEclipse Download: https://eclipse.org/downloads/
@@ -40,7 +42,10 @@
 
     <string name="hello_world_info5">Now… Let’s go into some detail about what is going on in this program. \nThe “public class HelloWorld portion of this code basically acts as an outline for the program. This should come with the creation of a new Java class and should be left alone. \nThe “public static void main (String []args)” portion is necessary for the program to run and pretty much declares that your program is running from that class. Inside the main class, we used “System.out.println” in order to print out the words “Hello World”. These descriptions are generalized as of now but we will go into more details on syntax in the next lesson.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="array">An array is an object that can be associated with a type or class. For example, you could have an array of ints or an array of Strings. An array contains a list of values of said associated type or class that are stored in consecutive memory location.
+        \n \n i.e Array of int values:
+	            \n int example [];
+	            \n int [] example;
+    </string>
 
 </resources>

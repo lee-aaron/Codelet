@@ -1,38 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:id="@+id/gettingStartedFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:ads="http://schemas.android.com/apk/res-auto">
 
-    <ScrollView
+    <FrameLayout
+        android:id="@+id/gettingStartedFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true" >
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_above="@+id/adView">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:gravity="center">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/gettingStartedFragmentImage"/>
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
 
-            <com.weebly.codelet.codelet.ChangeFont
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/getting_started_info"
-                android:layout_margin="@dimen/small_margin"
-                android:gravity="center_vertical|center_horizontal"/>
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/getting_started_info" />
 
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/gettingStartedFragmentImage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal" />
 
-    </ScrollView>
+                <com.weebly.codelet.codelet.ChangeFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_margin"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/getting_started_info2" />
 
-</FrameLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

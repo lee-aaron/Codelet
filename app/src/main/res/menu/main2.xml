@@ -9,7 +9,7 @@
             android:title="@string/hello_world" />
         <item
             android:id="@+id/nav_third_fragment"
-            android:title="@string/types" />
+            android:title="@string/arrays" />
 
     </group>
 </menu>
