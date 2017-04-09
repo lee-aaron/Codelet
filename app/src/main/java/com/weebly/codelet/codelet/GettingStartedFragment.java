@@ -32,7 +32,10 @@ public class GettingStartedFragment extends Fragment{
                 .listener(new RequestListener<String, GlideDrawable>() {
                     @Override
                     public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-                        Log.d(TAG, "Listener onException: " + e.toString());
+                        if(e != null)
+                        {
+                            Log.d(TAG, "Listener onException: " + e.toString());
+                        }
                         return false;
                     }
 

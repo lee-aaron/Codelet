@@ -12,9 +12,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <meta-data
-            android:name="com.weebly.codelet.codelet.GlideLoader"
-            android:value="GlideModule" />
         <activity
             android:name=".SplashActivity">
 
