@@ -38,6 +38,7 @@
             tools:context=".MainActivity"
             android:orientation="vertical">
 
+<<<<<<< HEAD
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -66,5 +67,8 @@
             ads:headerLayout="@layout/nav_header" />
     </android.support.v4.widget.DrawerLayout>
 
+=======
+    </LinearLayout>
+>>>>>>> 2a165c440dfc5eed890638cdcba6eb12646a6836
 
 </RelativeLayout>
