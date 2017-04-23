@@ -55,7 +55,7 @@ Arrays have a limited capacity so its size must be defined:\n
 The size of the array is defined at run time but cannot be altered once it is defined.\n
 \n
 Moreover, you can initialize an array using initial values in brackets {}:\n
-	String names [] = {“Jim”, “Anna”, “Jones”}; //array size 3\n
+	String names [] = {“Edward”, “Elyse”, “Aaron”}; //array size 3\n
 \n
 If you want to obtain the length of an array, use the “arrayName.length” property. This will return the declared size of the array.
 \n
