@@ -104,5 +104,164 @@ i.e. Printing out the values of an array:\n
 \n
 This example iterates over the array and prints out the value at the array index “i”.
     </string>
+    <string name="loops"><b><u>Loops</u></b>\n
+In situations where blocks of code need to be executed multiple times, loops can be used. A loop basically repeats code until it reaches a certain condition.\n
 
+\n
+
+There are primary two basic loops: \n
+While Loop - Repeats a statement or group of statements until a given condition is proven false. The condition is tested first before looping the body of the code.\n
+	\n
+i.e. \n
+while(true){\n
+...\n
+}\n\n
+The while loop continues to execute a block of code until our boolean “true” is disproven or told to exit the loop.\n
+\n
+For Loop - Executes a sequence of statements multiple times.\n
+	i.e. \n
+	for(int i = 0; i <![CDATA[<]]> 5; i++){\n
+...\n
+}	\n
+\n
+
+i.e. \n
+	for(int i = 0; i <![CDATA[<]]> 5; i++){\n
+System.out.println(“Hello World”);\n
+}	\n
+\n
+Output:\n
+Hello World\n
+Hello World\n
+Hello World\n
+Hello World\n
+Hello World\n
+\n
+The first part of the for loop defines int i and gives it the value 0. \n
+The next part is the main looping statement that says the loop will continue as long as our new int i is less than 5.\n
+Lastly, the third part of the loop increments i for every iteration. This means that every time the block of code is executed, i increases by 1. (After the first iteration, i = 1 and so on).\n
+
+
+<b><u>Breaking out of the Loops</u></b>\n
+There are several ways the these loops can be broken out of. The simplest way is using the “break” command.
+\n
+i.e.\n
+for(int i = 0; i <![CDATA[<]]>= 5; i++){\n
+if(i == 4){\n
+break;\n
+}\n
+}	\n
+\n
+In this example, our loop is told to execute the block of code until it is less than or equal to 5. However, we have a condition to test within each iteration of the loop. The loop will be broken out of when our int i equals to 4.\n
+A while loop can be broken out of once the condition is disproven or a break is used.
+\n
+i.e. \n
+boolean test = true;\n
+int i = 0;\n
+while(test) //loops while test is true\n
+{\n
+	if(i == 4){\n
+		test = false; // sets our condition to false (disproves it)\n
+}\n
+i++; //otherwise, it increments by 1\n
+}\n
+Our loop basically repeats the block of code while test remains true. However, when our int i increases to 4 (after each iteration of the loop), test is set to false, which discontinues the loop.
+
+\n
+ </string>
+    <string name = "syntax"> <b><u>Java Syntax Rules</u></b>\n
+    A Java statement may span across multiple lines. \n
+    \n
+    Java statements end with a semicolon “;”.\n
+    \n
+    A variable must be declared before first use:\n
+    type name; // declares the variable to be of the specified type but no initial value\n
+    type name = expression; // declares the variable and initializes it to the value of the expression\n
+    class name = new class(); // constructs name to be an object of class\n
+    \n
+    It is OK to have multiple statements on a single line, as long as they are separated by a “;”.
+    Program execution is done statement by statement, one statement at a time from top to bottom, or if there are multiple statements on one line, from left to right.\n
+    \n
+    Within a statement, execution of the individual pieces is not necessarily left to right. Operator precedence determines the order of operations within a statement (Think of it like PEMDAS).
+    \n
+    Nesting:\n
+    A while, if, or for must be followed by a statement to be complete\n
+    The statement can be another while, if or for, as in\n
+    \n
+    while(someCondition)\n
+    {\n
+    if(someDifferentCondition)\n
+    {\n
+    while(someOtherCondition)\n
+    {\n
+    System.out.println(“Hello!”);\n
+    }\n
+    }\n
+    }\n\n
+
+    Each while or if followed by its matching { and } and everything is a statement.\n
+
+    Similar for method definitions, except a method definition cannot be nested inside another statement.\n
+
+    The scope of a variable is the nearest { and } that contains its definition.  A variable is undefined outside its scope.\n
+
+</string>
+    <string name = "scanner"> <b><u>Scanner Class</u></b>\n
+When utilizing the Scanner class, which allows for a text scanner to take inputs, you must import the Scanner Class.
+\n
+You can either import java.util.*; or import the scanner class directly by importing java.util.Scanner;.
+\n
+After importing the Scanner class, you need to define a new scanner object:\n
+i.e. Scanner scan = new Scanner(System.in); //name of object is scan\n
+\n
+Using a Scanner basically allows you to prompt the user for inputs and set them to a certain variable.
+
+\n
+i.e. Scanner Input for int type\n
+//Scanner object named scan\n
+int example = scan.nextInt();\n
+\n
+i.e. Scanner Input for String type\n
+int example2 = scan.next(); //using next only returns what comes before a space input\n
+\n
+	Or\n
+\n
+int example3 = scan.nextLine();\n
+ //nextLine allows the user to input a space to input into multiple blocks of scanners\n
+\n
+i.e. scan.next();\n
+\n
+int example3 = scan.next();\n
+int example4 = scan.next();\n
+\n
+System.out.println(example3);\n
+System.out.println(example4);\n
+\n
+Input:\n
+hi bob\n
+\n
+Output:\n
+hi bob\n
+\n
+The example4 String will not be set to anything and will prompt the user again to input a value since “hi bob” will all belong to the example3 String.
+\n
+i.e. scan.nextLine();\n
+\n
+int example3 = scan.nextLine();\n
+int example4 = scan.nextLine();\n
+\n
+System.out.println(example3);\n
+System.out.println(example4);\n
+\n
+Input: \n
+hi bob\n
+\n
+Output:\n
+hi\n
+bob\n
+\n
+The space in between the “hi” and “bob” separates the String into two Strings, example3 and example 4.\n
+\n
+Overall, the scanner is used to prompt the user to input a value that is then set to a variable for use elsewhere.
+</string>
 </resources>

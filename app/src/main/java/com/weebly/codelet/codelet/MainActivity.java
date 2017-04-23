@@ -76,8 +76,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_first_fragment:
                 fragmentClass = GettingStartedFragment.class;
                 break;
+            case R.id.nav_oneptfive_fragment:
+                fragmentClass = SyntaxFragment.class;
+                break;
             case R.id.nav_second_fragment:
                 fragmentClass = HelloWorldFragment.class;
+                break;
+            case R.id.nav_twoptthree_fragment:
+                fragmentClass = ScannerFragment.class;
+                break;
+            case R.id.nav_twoptfive_fragment:
+                fragmentClass = LoopsFragment.class;
                 break;
             case R.id.nav_third_fragment:
                 fragmentClass = ArraysFragment.class;
