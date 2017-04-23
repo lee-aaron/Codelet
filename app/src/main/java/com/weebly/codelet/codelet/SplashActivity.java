@@ -1,20 +1,14 @@
 package com.weebly.codelet.codelet;
 
 import android.content.Intent;
-<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-=======
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
->>>>>>> 2a165c440dfc5eed890638cdcba6eb12646a6836
 
 public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         setContentView(R.layout.activity_splash_screen);
         Thread myThread = new Thread(){
             @Override
@@ -30,10 +24,5 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         myThread.start();
-=======
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        finish();
->>>>>>> 2a165c440dfc5eed890638cdcba6eb12646a6836
     }
 }

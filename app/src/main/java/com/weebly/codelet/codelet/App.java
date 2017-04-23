@@ -8,9 +8,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-<<<<<<< HEAD
         
-=======
->>>>>>> 2a165c440dfc5eed890638cdcba6eb12646a6836
     }
 }

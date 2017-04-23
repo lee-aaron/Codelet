@@ -9,7 +9,6 @@
     </style>
 
     <style name="splashScreenTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
-<<<<<<< HEAD
         <item name="android:windowBackground">@layout/activity_splash_screen</item>
     </style>
 
@@ -22,9 +21,4 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-=======
-        <item name="android:windowBackground">@drawable/splash_screen</item>
-    </style>
-
->>>>>>> 2a165c440dfc5eed890638cdcba6eb12646a6836
 </resources>
